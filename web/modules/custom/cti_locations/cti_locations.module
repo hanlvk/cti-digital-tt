@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function cti_locations_theme($existing, $type, $theme, $path) {
+  return [
+    'cti_locations_poland' => [
+      'variables' => [
+        'locations' => NULL,
+        'title' => t('Poland cities'),
+      ],
+    ]
+  ];
+}

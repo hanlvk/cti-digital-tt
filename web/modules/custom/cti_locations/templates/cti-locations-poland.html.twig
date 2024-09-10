@@ -1,0 +1,55 @@
+
+{{ attach_library('cti_locations/leaflet') }}
+{{ attach_library('cti_locations/global-scripts') }}
+
+{{ title_prefix }}
+{% if title %}
+  {% if page_title_image %}
+    <div class="image-field">{{ page_title_image }}</div>
+  {% endif %}
+  <h1{{ title_attributes.addClass('page__title') }}>{{ title }}</h1>
+{% endif %}
+{{ title_suffix }}
+
+<div id='leaflet_map'>
+  
+  <div id="map" style="height: 400px"></div>
+
+  <div class="">
+    <div class="">
+      <div class="">
+        <table class="">
+          <thead class="">
+            <tr>
+              <th class="">
+                Title
+              </th>
+              <th class="">
+                Latitude
+              </th>
+              <th class="">
+                Longitude
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for title, location in locations %}
+              <tr>
+                <th class="">
+                  {{ title }}
+                </th>
+                <td class="">
+                  {{ location.latitude }}
+                </td>
+                <td class="">
+                  {{ location.longitude }}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,5 @@
+name: CTI | Locations
+type: module
+description: Provides a page with Leaflet map of CTI locations
+core_version_requirement: ^9 || ^10 || ^11
+package: CTI

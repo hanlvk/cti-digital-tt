@@ -1,0 +1,7 @@
+cti_locations.poland_locations:
+  path: '/poland/cities'
+  defaults:
+    _controller: '\Drupal\cti_locations\Controller\CTILocationController::showLocations'
+    _title: 'Poland Cities'
+  requirements:
+    _permission: 'access content'

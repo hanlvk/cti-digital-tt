@@ -1,0 +1,25 @@
+
+leaflet:
+  js:
+    https://unpkg.com/leaflet@1.9.4/dist/leaflet.js:
+      type: external
+      attributes: {integrity: "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=", crossorigin: ""}
+#    https://cdn.tailwindcss.com:
+#      type: external
+  css:
+    theme:
+      https://unpkg.com/leaflet@1.9.4/dist/leaflet.css:
+        type: external
+        attributes: {integrity: "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=", crossorigin: ""}
+
+
+cti_locations:
+  js:
+    js/cti_locations.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - core/once
+    - core/drupalSettings
+    - cti_locations/leaflet
